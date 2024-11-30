@@ -16,17 +16,37 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"zuedev.bigtastyadditions.BigTastyAdditions"
+			{
+				"value": "zuedev.bigtastyadditions.BigTastyAdditions",
+				"adapter": "kotlin"
+			}
+		],
+		"client": [
+			{
+				"value": "zuedev.bigtastyadditions.BigTastyAdditionsClient",
+				"adapter": "kotlin"
+			}
+		],
+		"fabric-datagen": [
+			{
+				"value": "zuedev.bigtastyadditions.BigTastyAdditionsDataGenerator",
+				"adapter": "kotlin"
+			}
 		]
 	},
 	"mixins": [
-		"big-tasty-additions.mixins.json"
+		"big-tasty-additions.mixins.json",
+		{
+			"config": "big-tasty-additions.client.mixins.json",
+			"environment": "client"
+		}
 	],
 	"depends": {
 		"fabricloader": ">=0.16.9",
-		"minecraft": "~1.21.3",
-		"java": ">=21",
-		"fabric-api": "*"
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*",
+		"fabric-language-kotlin": "*"
 	},
 	"suggests": {
 		"another-mod": "*"
