@@ -28,12 +28,27 @@ public class BigTastyAdditions implements ModInitializer {
             ),
             "peeled_apple"
     );
+
     public static final ItemGroup BIG_TASTY_ADDITIONS = FabricItemGroup.builder()
             .icon(() -> new ItemStack(PEELED_APPLE))
-            .displayName(Text.translatable("itemGroup.big_tasty_additions"))
+            .displayName(Text.translatable("itemGroup.big-tasty-additions"))
             .build();
 
-    public static final RegistryKey<ItemGroup> BIG_TASTY_ADDITIONS_KEY = RegistryKey.of(Registries.ITEM_GROUP.getKey(), new Identifier(MOD_ID, "big_tasty_additions"));
+    public static final Item PEELER = registerItem(
+            new Item(
+                    new FabricItemSettings().maxCount(1)
+            ),
+            "peeler"
+    );
+
+    public static final Item KNIFE = registerItem(
+            new Item(
+                    new FabricItemSettings().maxCount(1)
+            ),
+            "knife"
+    );
+
+    public static final RegistryKey<ItemGroup> BIG_TASTY_ADDITIONS_KEY = RegistryKey.of(Registries.ITEM_GROUP.getKey(), new Identifier(MOD_ID, "big-tasty-additions"));
 
     public static final Item APPLE_SLICES = registerItem(
             new Item(
@@ -59,6 +74,8 @@ public class BigTastyAdditions implements ModInitializer {
         ItemGroupEvents.modifyEntriesEvent(BIG_TASTY_ADDITIONS_KEY).register(itemGroup -> {
             itemGroup.add(new ItemStack(PEELED_APPLE));
             itemGroup.add(new ItemStack(APPLE_SLICES));
+            itemGroup.add(new ItemStack(PEELER));
+            itemGroup.add(new ItemStack(KNIFE));
         });
     }
 }
