@@ -28,12 +28,7 @@ public class Items {
             ),
             "peeled_apple"
     );
-
-    public static final ItemGroup BIG_TASTY_ADDITIONS = FabricItemGroup.builder()
-            .icon(() -> new ItemStack(PEELED_APPLE))
-            .displayName(Text.translatable("itemGroup.big-tasty-additions"))
-            .build();
-
+    
     public static final Item KNIFE = registerItem(
             new Item(
                     new FabricItemSettings().maxCount(1)
@@ -51,6 +46,11 @@ public class Items {
             ),
             "apple_slices"
     );
+
+    public static final ItemGroup BIG_TASTY_ADDITIONS = FabricItemGroup.builder()
+            .icon(() -> new ItemStack(APPLE_SLICES))
+            .displayName(Text.translatable("itemGroup.big-tasty-additions.food"))
+            .build();
 
     public static final RegistryKey<ItemGroup> BIG_TASTY_ADDITIONS_KEY = RegistryKey.of(Registries.ITEM_GROUP.getKey(), new Identifier(BigTastyAdditions.MOD_ID, "big-tasty-additions"));
 
