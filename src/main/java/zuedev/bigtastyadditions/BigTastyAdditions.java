@@ -18,13 +18,20 @@ public class BigTastyAdditions implements ModInitializer {
 
     public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
+    public static final Item PEELER = registerItem(
+            new Item(
+                    new FabricItemSettings().maxCount(1)
+            ),
+            "peeler"
+    );
+
     public static final Item PEELED_APPLE = registerItem(
             new Item(
                     new FabricItemSettings().food(
                             new FoodComponent.Builder()
                                     .hunger(FoodComponents.APPLE.getHunger())
                                     .build()
-                    )
+                    ).recipeRemainder(PEELER)
             ),
             "peeled_apple"
     );
@@ -33,14 +40,7 @@ public class BigTastyAdditions implements ModInitializer {
             .icon(() -> new ItemStack(PEELED_APPLE))
             .displayName(Text.translatable("itemGroup.big-tasty-additions"))
             .build();
-
-    public static final Item PEELER = registerItem(
-            new Item(
-                    new FabricItemSettings().maxCount(1)
-            ),
-            "peeler"
-    );
-
+    
     public static final Item KNIFE = registerItem(
             new Item(
                     new FabricItemSettings().maxCount(1)
@@ -48,18 +48,18 @@ public class BigTastyAdditions implements ModInitializer {
             "knife"
     );
 
-    public static final RegistryKey<ItemGroup> BIG_TASTY_ADDITIONS_KEY = RegistryKey.of(Registries.ITEM_GROUP.getKey(), new Identifier(MOD_ID, "big-tasty-additions"));
-
     public static final Item APPLE_SLICES = registerItem(
             new Item(
                     new FabricItemSettings().food(
                             new FoodComponent.Builder()
                                     .hunger(FoodComponents.APPLE.getHunger())
                                     .build()
-                    )
+                    ).recipeRemainder(KNIFE)
             ),
             "apple_slices"
     );
+
+    public static final RegistryKey<ItemGroup> BIG_TASTY_ADDITIONS_KEY = RegistryKey.of(Registries.ITEM_GROUP.getKey(), new Identifier(MOD_ID, "big-tasty-additions"));
 
     public static Item registerItem(Item item, String id) {
         return Registry.register(Registries.ITEM, new Identifier(MOD_ID, id), item);
