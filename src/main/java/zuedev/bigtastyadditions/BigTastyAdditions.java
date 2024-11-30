@@ -27,6 +27,17 @@ public class BigTastyAdditions implements ModInitializer {
             "peeled_apple"
     );
 
+    public static final Item APPLE_SLICES = registerItem(
+            new Item(
+                    new FabricItemSettings().food(
+                            new FoodComponent.Builder()
+                                    .hunger(FoodComponents.APPLE.getHunger())
+                                    .build()
+                    )
+            ),
+            "apple_slices"
+    );
+
     public static Item registerItem(Item item, String id) {
         return Registry.register(Registries.ITEM, new Identifier(MOD_ID, id), item);
     }
