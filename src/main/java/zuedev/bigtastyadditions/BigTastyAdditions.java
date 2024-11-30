@@ -3,6 +3,7 @@ package zuedev.bigtastyadditions;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.item.FoodComponent;
+import net.minecraft.item.FoodComponents;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -19,7 +20,7 @@ public class BigTastyAdditions implements ModInitializer {
             new Item(
                     new FabricItemSettings().food(
                             new FoodComponent.Builder()
-                                    .hunger(4)
+                                    .hunger(FoodComponents.APPLE.getHunger())
                                     .build()
                     )
             ),
