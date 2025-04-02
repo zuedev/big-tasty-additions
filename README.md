@@ -1,4 +1,4 @@
-![](src/main/resources/assets/big-tasty-additions/icon.png)
+![](/source/neoforge/src/main/resources/assets/big_tasty_additions/textures/icon.png)
 
 # Big Tasty Additions
 
