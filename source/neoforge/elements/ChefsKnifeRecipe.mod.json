@@ -9,19 +9,19 @@
     "xpReward": 0.0,
     "cookingTime": 200,
     "craftingBookCategory": "MISC",
-    "recipeShapeless": true,
+    "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "Items.APPLE"
+        "value": ""
       },
       {
-        "value": "CUSTOM:ChefsKnife"
+        "value": "Items.FLINT"
       },
       {
         "value": ""
       },
       {
-        "value": ""
+        "value": "Items.STICK"
       },
       {
         "value": ""
@@ -40,9 +40,9 @@
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:AppleSlices"
+      "value": "CUSTOM:ChefsKnife"
     },
-    "name": "apple_slices_recipe",
+    "name": "chefs_knife_recipe",
     "namespace": "mod"
   }
 }

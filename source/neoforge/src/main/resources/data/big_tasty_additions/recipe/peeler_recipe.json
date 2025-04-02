@@ -2,11 +2,11 @@
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
   "ingredients": [
-    "minecraft:apple",
-    "big_tasty_additions:chefs_knife"
+    "big_tasty_additions:chefs_knife",
+    "minecraft:flint"
   ],
   "result": {
-    "id": "big_tasty_additions:apple_slices",
+    "id": "big_tasty_additions:peeler",
     "count": 1
   }
 }

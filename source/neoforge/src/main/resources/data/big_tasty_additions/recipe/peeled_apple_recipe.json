@@ -3,7 +3,7 @@
   "category": "misc",
   "ingredients": [
     "minecraft:apple",
-    "#minecraft:swords"
+    "big_tasty_additions:peeler"
   ],
   "result": {
     "id": "big_tasty_additions:peeled_apple",

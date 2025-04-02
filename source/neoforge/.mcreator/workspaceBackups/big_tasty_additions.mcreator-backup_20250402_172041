@@ -85,32 +85,6 @@
         ]
       },
       "path": "~/Items"
-    },
-    {
-      "name": "ChefsKnifeRecipe",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "chefs_knife_recipe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/big_tasty_additions/recipe/chefs_knife_recipe.json"
-        ]
-      },
-      "path": "~/Recipes"
-    },
-    {
-      "name": "PeelerRecipe",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "peeler_recipe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/big_tasty_additions/recipe/peeler_recipe.json"
-        ]
-      },
-      "path": "~/Recipes"
     }
   ],
   "variable_elements": [],

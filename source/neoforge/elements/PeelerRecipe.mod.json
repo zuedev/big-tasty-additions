@@ -12,10 +12,10 @@
     "recipeShapeless": true,
     "recipeSlots": [
       {
-        "value": "Items.APPLE"
+        "value": "CUSTOM:ChefsKnife"
       },
       {
-        "value": "CUSTOM:ChefsKnife"
+        "value": "Items.FLINT"
       },
       {
         "value": ""
@@ -40,9 +40,9 @@
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:AppleSlices"
+      "value": "CUSTOM:Peeler"
     },
-    "name": "apple_slices_recipe",
+    "name": "peeler_recipe",
     "namespace": "mod"
   }
 }

@@ -55,62 +55,6 @@
         ]
       },
       "path": "~/Recipes"
-    },
-    {
-      "name": "ChefsKnife",
-      "type": "item",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "chefs_knife",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/big_tasty_additions/items/chefs_knife.json",
-          "src/main/java/dev/zue/bigtastyadditions/item/ChefsKnifeItem.java",
-          "src/main/resources/assets/big_tasty_additions/models/item/chefs_knife.json"
-        ]
-      },
-      "path": "~/Items"
-    },
-    {
-      "name": "Peeler",
-      "type": "item",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "peeler",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/big_tasty_additions/models/item/peeler.json",
-          "src/main/resources/assets/big_tasty_additions/items/peeler.json",
-          "src/main/java/dev/zue/bigtastyadditions/item/PeelerItem.java"
-        ]
-      },
-      "path": "~/Items"
-    },
-    {
-      "name": "ChefsKnifeRecipe",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "chefs_knife_recipe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/big_tasty_additions/recipe/chefs_knife_recipe.json"
-        ]
-      },
-      "path": "~/Recipes"
-    },
-    {
-      "name": "PeelerRecipe",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "peeler_recipe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/big_tasty_additions/recipe/peeler_recipe.json"
-        ]
-      },
-      "path": "~/Recipes"
     }
   ],
   "variable_elements": [],
@@ -120,8 +64,6 @@
   "language_map": {
     "en_us": {
       "item.big_tasty_additions.peeled_apple": "Peeled Apple",
-      "item.big_tasty_additions.chefs_knife": "Chefs Knife",
-      "item.big_tasty_additions.peeler": "Peeler",
       "item.big_tasty_additions.apple_slices": "Apple Slices"
     }
   },
