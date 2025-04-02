@@ -1,0 +1,47 @@
+{
+  "mod_elements": [
+    {
+      "name": "PeeledApple",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "peeled_apple",
+      "metadata": {
+        "files": [
+          "src/main/java/dev/zue/bigtastyadditions/item/PeeledAppleItem.java",
+          "src/main/resources/assets/big_tasty_additions/models/item/peeled_apple.json",
+          "src/main/resources/assets/big_tasty_additions/items/peeled_apple.json"
+        ]
+      }
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "tag_elements": {},
+  "tab_element_order": {},
+  "language_map": {
+    "en_us": {
+      "item.big_tasty_additions.peeled_apple": "Peeled Apple"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "big_tasty_additions",
+    "modName": "Big Tasty Additions",
+    "version": "1.0.0",
+    "author": "zuedev, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Not specified",
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "neoforge-1.21.4",
+    "modElementsPackage": "dev.zue.bigtastyadditions"
+  },
+  "mcreatorVersion": 202500113416
+}

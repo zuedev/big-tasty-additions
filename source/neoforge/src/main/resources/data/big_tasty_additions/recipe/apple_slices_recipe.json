@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:apple",
+    "#minecraft:swords"
+  ],
+  "result": {
+    "id": "big_tasty_additions:apple_slices",
+    "count": 1
+  }
+}
