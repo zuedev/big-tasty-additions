@@ -141,18 +141,16 @@
   "workspaceSettings": {
     "modid": "big_tasty_additions",
     "modName": "Big Tasty Additions",
-    "version": "0.0.2",
-    "author": "zuedev",
-    "websiteURL": "https://zue.dev",
-    "license": "Creative Commons Zero v1.0 Universal",
+    "version": "1.0.0",
+    "author": "zuedev, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Not specified",
     "serverSideOnly": false,
-    "modPicture": "icon",
     "requiredMods": [],
     "dependencies": [],
     "dependants": [],
     "mcreatorDependencies": [],
     "currentGenerator": "neoforge-1.21.4",
-    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "dev.zue.bigtastyadditions"
   },
   "mcreatorVersion": 202500113416
